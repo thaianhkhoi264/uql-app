@@ -1,0 +1,96 @@
+.uql-preview {
+  position: sticky;
+  bottom: 0;
+  background: #10131e;
+  border-top: 1px solid #232b41;
+  padding: 16px;
+  margin-top: 24px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.uql-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.uql-preview-header h2 {
+  margin: 0;
+  font-size: 15px;
+  color: #eef1fb;
+}
+
+.uql-preview-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.uql-apply-btn {
+  background: none;
+  border: 1px solid #4d7cff;
+  color: #4d7cff;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.uql-apply-btn:hover {
+  background: #4d7cff;
+  color: #fff;
+}
+
+.uql-copy-btn {
+  background: #4d7cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.uql-copy-btn:disabled {
+  background: #2e3648;
+  color: #6c7694;
+  cursor: not-allowed;
+}
+
+.uql-preview-text {
+  width: 100%;
+  background: #0a0d16;
+  color: #b9e2b0;
+  border: 1px solid #232b41;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'Consolas', 'Menlo', monospace;
+  font-size: 13px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.uql-preview-hint {
+  margin: 8px 0 0;
+  font-size: 11px;
+  color: #6c7694;
+}
+
+.uql-preview-warnings {
+  margin: 8px 0 0;
+  padding: 8px 12px;
+  background: rgba(255, 111, 111, 0.08);
+  border: 1px solid rgba(255, 111, 111, 0.3);
+  border-radius: 6px;
+  font-size: 12px;
+  color: #ff9b9b;
+  list-style: none;
+}
+
+.uql-preview-warnings li + li {
+  margin-top: 4px;
+}

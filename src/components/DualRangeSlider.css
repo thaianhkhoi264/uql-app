@@ -1,0 +1,77 @@
+.drs-root {
+  position: relative;
+  padding: 14px 6px 4px;
+  width: 100%;
+}
+
+.drs-track {
+  position: relative;
+  height: 4px;
+  background: #2e3648;
+  border-radius: 2px;
+  margin: 0 8px;
+}
+
+.drs-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #4d7cff;
+  border-radius: 2px;
+}
+
+.drs-input {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  pointer-events: none;
+  appearance: none;
+  background: transparent;
+  height: 20px;
+}
+
+.drs-input::-webkit-slider-thumb {
+  appearance: none;
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #4d7cff;
+  border: 2px solid #0f1320;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.drs-input::-moz-range-thumb {
+  pointer-events: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #4d7cff;
+  border: 2px solid #0f1320;
+  cursor: pointer;
+}
+
+.drs-input::-webkit-slider-runnable-track {
+  height: 4px;
+  background: transparent;
+}
+
+.drs-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  padding: 0 4px;
+}
+
+.drs-label {
+  font-size: 10px;
+  color: #5c6788;
+}
+
+.drs-label-active {
+  color: #9cb4ff;
+  font-weight: 600;
+}
